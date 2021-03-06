@@ -38,7 +38,7 @@ i {
     justify-content: center;
 }
 
-a {
+.arow a {
     display:inline-block;
     color:white;
     text-decoration:none;
@@ -52,7 +52,7 @@ a {
     transition:0.15s;
 }
 
-a:hover {
+.arow a:hover {
     transform:scale(1.05,1.05);
     color:#0C151F;
     background-color:#e8fd2e
