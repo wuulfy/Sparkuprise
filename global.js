@@ -2,7 +2,7 @@
 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     document.getElementById("nav").style.backgroundColor = "#0a1017f6";
     document.getElementById("logo").style.height = "45px";
   } else {
