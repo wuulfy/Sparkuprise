@@ -17,10 +17,12 @@ window.onload=function(){
   (function() {
       var visited = localStorage.getItem('visited');
       document.getElementById("splashscreen").style.display = "none";
+      document.getElementById("splashscreen").style.display = "none";
       var element = document.getElementById("fade");
           element.classList.add("fade2");
       if (!visited) {
           document.getElementById("splashscreen").style.display = "flex";
+          document.getElementById("splashscreen").style.animation = "0s splashTrans";
           localStorage.setItem('visited', true);
           var element = document.getElementById("fade");
           element.classList.add("fade");
