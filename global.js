@@ -14,9 +14,9 @@ function scrollFunction() {
 // Set classes according to whether user has visited the page or not:
 
 window.onload=function(){
+  console.log("⚡⚡⚡ - Hey there! Not sure what you're doing here but whatever you have in mind, have fun.");
   (function() {
       var visited = localStorage.getItem('visited');
-      document.getElementById("splashscreen").style.display = "none";
       document.getElementById("splashscreen").style.display = "none";
       var element = document.getElementById("fade");
           element.classList.add("fade2");

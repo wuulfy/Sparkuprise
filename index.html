@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en">
+<html lang="en_US" xml:lang="en">
 <head>
 <title>Home | Spark</title>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Sen:wght:500,800&amp;display=swap%22%" rel="stylesheet">
   <link rel="shortcut icon" href="images/logo.svg">
+    <meta http-equiv="refresh">
     <meta name="msapplication-TileColor" content="#fde82e">
     <meta name="msapplication-TileColor" content="#fde82e">
     <meta name="theme-color" content="#fde82e">
@@ -14,22 +15,23 @@
     <meta content="#fde82e" name="theme-color">
     <meta charset="UTF-8">
     <meta name="keywords" content="spark,sparkuprise,social, media, social media, twitter, discord">
-    <link rel="canonical" href="http://127.0.0.1:5500/">
+    <link rel="canonical" href="https://sparkuprise.com">
     <meta name="description" content="Spark, a post-production & social media management agency to help you make the spark before the flame">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Spark | Post Production & Social Media">
     <meta property="og:description" content="Spark, a post-production & social media management agency to help you make the spark before the flame">
-    <meta property="og:url" content="http://127.0.0.1:5500/">
+    <meta property="og:url" content="https://sparkuprise.com">
     <meta property="og:site_name" content="Spark">
-    <meta property="og:image" content="images/banner.jpeg">
+    <meta property="og:image" content="https://sparkuprise.com/images/banner.jpg">
     <meta property="og:image:width" content="1280">
     <meta property="og:image:height" content="720">
     <meta name="twitter:card" content="summary_large_image">  
-    <meta property="og:image" content="images/banner.jpeg">
+    <meta name="twitter:image" content="https://sparkuprise.com/images/banner.jpg">
     <meta name="twitter:creator" content="@sparkuprise">
-    <meta name="twitter:site" content="https://">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:site" content="https://sparkuprise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <script src="https://kit.fontawesome.com/3c6f6f5ebb.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="global.js"></script>
@@ -37,10 +39,10 @@
 <body id="fade">
   <div class="fadeIn"></div>
   <div id="splashscreen">
-    <lottie-player src="images/spark-logo-animation.json" alt="Spark logo animation" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+    <lottie-player src="images/spark-logo-animation.json" alt="Spark logo animation" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
   </div>
 <div id="nav">
-  <a id="logo" href="#"><img src="images/logo.svg" alt="Spark logo" height=60px></a>
+  <a id="logo" href="#"><img src="images/logo.svg" alt="Spark logo" height="60px"></a>
   <div id="socials">
     <a href="twitter.html" title="@Sparkuprise"><i class="fab fa-twitter"></i></a>
     <a href="discord.html" title="Spark Discord Server"><i class="fab fa-discord"></i></a>
@@ -55,7 +57,9 @@
     <span class="slideIn3 span">A post-production & social media management agency to help you ignite the spark before the flame.</span>
   </div>
   <div class="right">
-    <img src="images/spark.gif" alt="Spark brand animation" width="100%" oncontextmenu="return false;">
+    <video autoplay muted loop alt="Spark brand animation" width="100%" oncontextmenu="return false;">
+      <source src="images/spark.webm" type="video/webm">
+    </video>
   </div>
 </div>
 <div class="main">
@@ -63,7 +67,7 @@
     <h2 class="gradient">A QUICK LOOK</h2><hr>
     <span>A short video to introduce you to Spark. See what we're all about!</span><br>
     <div class="bdown"></div>
-    <iframe width="850" height="478" src="https://www.youtube.com/embed/ZB0hJiPd6oM" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><br>
+    <iframe width="850" height="478" id="width" title="Youtube video for Spark promotion material" src="https://www.youtube.com/embed/ZB0hJiPd6oM" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><br>
     <div class="bdown"></div>
     <h2 class="gradient">ALL ABOUT SPARK</h2><hr>
     <span>Spark is a social media management and post-production agency. We help creators produce content for Tiktok Instagram and YouTube, managing them to grow their brand to new heights.</span><br>
@@ -103,7 +107,7 @@
       <h2 class="gradient">NIKITO</h2><br>
       <span>300k+ Total Followers</span>
     </a>
-    <a class="profile" target="_blank" href="https://twitter.com/Clement_ttt/photo" rel="noopener">
+    <a class="profile" target="_blank" href="https://twitter.com/Clement_ttt/" rel="noopener">
       <img src="images/pfps/clement.jpg" alt="Clement logo"><br>
       <h2 class="gradient">CLEMENT</h2><br>
       <span>25k+ Total Followers</span>
@@ -119,15 +123,14 @@
       <span>65k+ Total Followers</span>
     </a>
     <div class="bdown"></div>
-    <h2 class="gradient">AFFORDABLE AND GREAT</h2><hr>
+    <h2 class="gradient">"AFFORDABLE AND GREAT"</h2><hr>
     <span>We ensure to deliver an affordable but high quality service with low prices.<br> Don't believe us? Here are what people thought of us:</span><br>
     <div class="bdown"></div>
     <div class="review">
-      <h1 class="gradient">Reviewname</h1><br>
-      <span>"Review goes here"</span>
+      <h1 class="gradient">wuulfy:</h1><br>
+      <span>"Spark is a business with leagues of potential that they're using well. They do a good job"</span>
     </div>
     <div class="bdown"></div>
-    <a class="btn" href="packages.html">OUR PACKAGES</a>
     <div class="bdown"></div> 
     <h2 class="gradient">GET IN TOUCH</h2>
     <hr>
@@ -143,13 +146,10 @@
       <a href="contact.html">Contact</a>
     </div>
     <div class="footerin">
-      <h1 class="gradient">PACKAGES</h1>
-      <hr>
-    </div>
-    <div class="footerin">
       <h1 class="gradient">CONTACT</h1>
       <hr>
-      <a href=""><i class="fab fa-twitter"></i> @Sparkuprise</a>
+      <a href="https://twitter.com/Sparkuprise"><i class="fab fa-twitter"></i> @Sparkuprise</a>
+      <a href="https://discord.com/invite/UCgtG6DHzS"><i class="fab fa-discord"></i> Spark Community Server</a>
     </div><br>
     <span id="last">© Spark 2021. All rights reserved</span>
   </div>
