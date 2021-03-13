@@ -1,3 +1,7 @@
+img {
+    border-radius:15px;
+}
+
 .maininner {
     margin-top:80px;
 }
@@ -75,4 +79,50 @@ a {
     margin:0;
     margin-bottom:10px;
     font-size:20px;
+}
+
+#nav {
+    height:65px;
+}
+
+@media screen and (orientation: portrait) {
+    img {
+        width:95%;
+        border-radius:10px;
+    }
+
+    .paletterow {
+        box-shadow:unset;
+        border-radius:unset;
+        overflow:unset;
+    }
+
+    .palettepiece {
+        width:45%;
+        margin-right:2px;
+        margin-left:2px;
+        margin-bottom:10px;
+        border-radius:15px;
+        vertical-align:middle;
+        height:150px;
+        padding:5px;
+        box-shadow:0 5px 20px #00000090;
+    }
+
+    .palettepiece p {
+        font-size:14.5px;
+    }
+
+    @media (min-aspect-ratio: 3/5){
+        .palettepiece {
+            height:115px;
+            width:30%;
+            margin-left:1.25%;
+            margin-right:1.25%;
+        }
+
+        #shrunk {
+            width:40%;
+        }
+    }
 }

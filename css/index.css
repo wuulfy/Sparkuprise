@@ -12,27 +12,14 @@
     font-weight:800;
     margin-top:-10px;
     margin-bottom:-10px;
-    text-shadow: 0 0 25px #fdcd2ecc;
-    animation:glow 1s infinite cubic-bezier(0.2,0,0.3,1), lightning 0.7s, slideIn2 1.1s cubic-bezier(.32,0,0,1);
+    text-shadow: 0 0 20px #fdcd2ebb;
+    animation:glow 2s infinite cubic-bezier(0.3,0,0,0.4), lightning 0.7s, slideIn2 1.1s cubic-bezier(.32,0,0,1);
 }
 
 @keyframes glow {
-    0% {text-shadow: 0 0 20px #fdcd2e99;}
-    50% {text-shadow: 0 0 30px #fdcd2eaa;}
-    100% {text-shadow: 0 0 20px #fdcd2e99;}
-}
-
-@keyframes lightning {
-    0%{}
-    20%{filter:brightness(80%)}
-    21%{filter:brightness(250%)}
-    45%{filter:brightness(80%)}
-    46%{filter:brightness(250%)}
-    75%{filter:brightness(80%)}
-    76%{filter:brightness(250%)}
-    95%{filter:brightness(80%)}
-    96%{filter:brightness(250%)}
-    100%{}
+    0% {text-shadow: 0 0 20px #fdcd2e77;}
+    50% {text-shadow: 0 0 20px #fdcd2ebb;}
+    100% {text-shadow: 0 0 20px #fdcd2e77;}
 }
 
 .centerwrap {
@@ -55,7 +42,7 @@
             user-select: none; 
 }
 
-.right img {
+.right video {
     border-radius:5%;
     box-shadow: 0 0 30px #00000099
 }
@@ -91,13 +78,13 @@
 }
 
 #logo:hover {
-    filter:brightness(500%)
+    filter:brightness(800%)
 }
 
-/*Used brightness because I thought this would be faster than making the user load
+/* Used brightness because I thought this would be faster than making the user load
 2 different coloured images. I opted to use path fills by dumping the svg logo code
 into the HTML one but I couldn't get the image to show. I wish <img> just supported
-path fills or if <svg src="images/logo.svg"> was valid. This language sucks...*/
+path fills or if <svg src="images/logo.svg"> was valid. HTML sucks...*/
 
 .slideIn {
     animation:1s slideIn cubic-bezier(.32,0,0,1);
@@ -130,7 +117,7 @@ path fills or if <svg src="images/logo.svg"> was valid. This language sucks...*/
     height:100%;
     opacity:0;
     background-color:black;
-    animation:splashFade 3.7s !important;
+    animation:splashFade 3.7s, splashTrans 0.5s !important ;
 }
 
 @keyframes splashFade {
@@ -177,6 +164,10 @@ lottie-player {
     border-color:#fde82e90;
 }
 
+.profile h2 {
+    font-size:45px;
+}
+
 #readmore {
     display:none;
     margin-top:-20px;
@@ -199,9 +190,76 @@ lottie-player {
 
 .separator {
     float:left;
-    display:inline-block;
     margin-top:97px;
     height:60px;
     width:4px;
     background-color:#ffffff10;
+}
+
+.footer {
+    padding-top:0px;
+}
+
+@media screen and (orientation: portrait) {
+    .right {
+        display:none;
+    }
+
+    .inner {
+        margin-left:0;
+        width:100%;
+        text-align:center;
+        background:none;
+        box-shadow:unset;
+        border-radius:0px;
+    }
+
+    @keyframes slideIn2 {
+        0% {transform:translate(0,30px); opacity:0;}
+        10% {transform:translate(0,30px); opacity:0;}
+        100% {}
+    }
+    
+    @keyframes slideIn3 {
+        0% {transform:translate(0,30px); opacity:0;}
+        20% {transform:translate(0,30px); opacity:0;}
+        100% {}
+    }
+
+    .section {
+        width:100%;
+        margin-bottom:-5px;
+        margin-top:-5px;
+    }
+
+    .profile {
+        width:47%;
+        margin:1px;
+        margin-top:60px;
+        margin-bottom:20px;
+        padding-bottom:2px;
+    }
+
+    .profile h2 {
+        font-size:30px;
+        width:100%;
+    }
+
+    .profile span {
+        font-size:16px;
+    }
+
+    .profile img {
+        width:100px;
+        margin-bottom:-30px;
+    }
+    
+    .separator {
+        display:none;
+    }
+
+    #width {
+        width:300px;
+        height:170px;
+    }
 }

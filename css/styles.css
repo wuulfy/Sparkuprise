@@ -44,13 +44,13 @@ a {
 
 span {
     color:#ffffff;
-    font-family:"Sen";
+    font-family:Sen, Helvetica;
     font-size:1.25rem;
     line-height:1.9rem;
 }
 
 img {
-    font-family:sen;
+    font-family:Sen, Helvetica;
     font-weight:500;
     font-size:25px;
     color:white
@@ -90,7 +90,7 @@ img {
 #socials {
     position:fixed;
     right:15px;
-    top:13px;
+    top:10px;
     transition:0.2s;
 }
 
@@ -132,14 +132,14 @@ img {
    -webkit-text-fill-color: transparent;
    -moz-text-fill-color: transparent;
    -ms-background-clip: text;
-   font-family:Sen;
+   font-family:Sen, Helvetica;
    margin:0;
    z-index:20;
 }
 
 .btn {
     display:inline-block;
-    font-family:"Sen";
+    font-family:Sen, Helvetica;
     font-weight:700;
     font-size:1.3rem;
     color:#fdef2e;
@@ -177,7 +177,7 @@ h2 {
 }
 
 @keyframes mainIn {
-    from{transform:translate(0,10px); opacity:0}
+    from{opacity:0}
     to{}
 }
 
@@ -191,7 +191,6 @@ h2 {
 }
 
 .section {
-    display:inline-block;
     float:left;
     padding-top:20px;
     padding-bottom:20px;
@@ -241,20 +240,21 @@ h2 {
 .footer {
     background-color:#080e16;
     width:100%;
-    padding-top:20px;
+    padding-top:25px;
     margin-top:40px;
 }
 
 .footerin {
     display:inline-block;
     width: 423px;
+    margin-bottom:20px;
     vertical-align:top;
 }
 
 .footer a {
     display:block;
     color:#CECFD0;
-    font-family:sen;
+    font-family:Sen, Helvetica;
     font-size:20px;
     font-weight:500;
     line-height:30px;
@@ -286,6 +286,11 @@ h2 {
     margin-top:-20px;
 }
 
+.review span {
+    font-size:18px;
+    line-height:25px;
+}
+
 .bdown {
     display:block;
     width:100%;
@@ -294,4 +299,73 @@ h2 {
 
 iframe {
     border-radius:20px;
+}
+
+@media screen and (orientation: portrait) {
+    @keyframes slideIn {
+        from {transform:translate(0,30px); opacity:0;}
+        to {}
+    }
+
+    .footerin {
+        width:100%;
+    }
+
+    .review {
+        width:85%;   
+    }
+
+    #nav {
+        text-align:left;
+    }
+
+    #logo {
+        padding-left:15px;
+    }
+
+    .logobg {
+        width:200px;
+    }
+
+    .btn {
+        font-size:20px;
+    }
+
+    h2 {
+        font-size:38px;
+    }
+
+    span {
+        font-size:17px;
+        line-height:28px;
+    }
+
+    .maininner {
+        width:97%;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-aspect-ratio: 3/5) {
+    span {
+        font-size:20px;
+        line-height:35px;
+    }
+
+    h1 { 
+        font-size:30px;
+    }
+
+    h2 {
+        font-size:42px;
+    }
+
+    iframe {
+        height:335px !important;
+        width:600px !important;
+    }
+    
+    .review {
+        width:44%;
+        margin:5px;
+    }
 }

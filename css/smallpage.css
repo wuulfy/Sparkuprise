@@ -58,11 +58,11 @@ i {
     background-color:#e8fd2e
 }
 
-  #tl {    
-    position:fixed;
-    left:0;
-    top:0;
-    animation:slideInX 0.5s;
+#tl {    
+  position:fixed;
+  left:0;
+  top:0;
+  animation:slideInX 0.5s;
 }
 
 #br {
@@ -118,4 +118,10 @@ i {
 .inner {
     width:100%;
     border-radius:10px;
+}
+
+@media screen and (orientation: portrait) { 
+    .arow a {
+        background-color:#1B232D
+    }
 }
