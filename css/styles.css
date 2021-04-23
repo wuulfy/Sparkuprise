@@ -342,13 +342,17 @@ iframe {
         line-height:28px;
     }
 
+    .review {
+        width:80%;
+        margin:5px;
+    }
+
     .maininner {
         width:97%;
     }
     
     .promo {
         width:100%;
-        margin:-110px;
     }
 }
 
