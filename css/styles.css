@@ -353,6 +353,7 @@ iframe {
     
     .promo {
         width:100%;
+        margin:-30%;
     }
 }
 
@@ -378,5 +379,10 @@ iframe {
     .review {
         width:44%;
         margin:5px;
+    }
+
+    .promo {
+        width:100%;
+        margin:-6%;
     }
 }
